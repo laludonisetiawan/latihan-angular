@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ProductModule } from './product/product.module';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     ProductModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
