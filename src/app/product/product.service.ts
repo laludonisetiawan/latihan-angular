@@ -7,5 +7,5 @@ export class ProductService {
 
   constructor() { }
 
-  productName = "Laptop"
+  productName = "Laptop Asus";
 }
