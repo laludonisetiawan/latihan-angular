@@ -1,0 +1,10 @@
+{
+  "product": [
+    {"id": 1, "Name": "Laptop Asus VivoBook"},
+    {"id": 2, "Name": "Laptop Lenovo ThinkPad"},
+    {"id": 3, "Name": "Laptop Macbook M2 Pro"},
+    {"id": 4, "Name": "Laptop Acer GenAlus"}
+
+
+  ]
+}
