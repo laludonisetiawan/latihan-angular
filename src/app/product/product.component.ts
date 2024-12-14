@@ -11,7 +11,6 @@ import {ProductService} from './product.service';
 
 export class ProductComponent {
   productName : string = '';
-
   // Dependency Injection untuk interaksi dengan ProductService yang berisi data productName
   constructor(private readonly productService: ProductService) {
     this.productName = this.productService.productName;
