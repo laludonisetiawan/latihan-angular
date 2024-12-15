@@ -2,3 +2,14 @@ table {
   width: 100%;
   margin-top: 20px;
 }
+
+.button-option-edit{
+  margin: 0 2px 0 2px;
+  background-color: green;
+  color:white
+}
+.button-option-delete{
+  margin: 0 2px 0 2px;
+  background-color: red;
+  color: white;
+}

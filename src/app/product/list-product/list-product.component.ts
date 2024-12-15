@@ -34,7 +34,7 @@ export class ListProductComponent implements OnInit{
   constructor(private _productService: ProductService){}
   // products: Product[]= []
 
-  displayedColumns: string[] = ['id', 'name'];
+  displayedColumns: string[] = ['id', 'name', 'option'];
   dataSource : Product[] = [];
 
   ngOnInit(): void {
@@ -42,6 +42,15 @@ export class ListProductComponent implements OnInit{
   //  this.products = res;
     this.dataSource = res;
   })
+  }
+
+  // fungsi delete product
+  deleteProduct(id: any) {
+    this._productService.deleteProduct(id).subscribe((res) => {
+      this._productService.getProduct().subscribe((res_product) => {
+        this.dataSource = res_product;
+      });
+    })
   }
 
 }

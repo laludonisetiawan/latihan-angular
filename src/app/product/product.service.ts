@@ -26,4 +26,9 @@ export class ProductService {
     return this._httpClient.post<Product>('http://localhost:3000/product', data);
   }
 
+  // function untuk delete product
+  deleteProduct(id: any) {
+    return this._httpClient.delete<Product>('http://localhost:3000/product/' + id)
+  }
+
 }
